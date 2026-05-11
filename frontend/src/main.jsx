@@ -1,10 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import Accessibility from './Accessibility'
 import './index.css'
+import './accessibility.css'
+
+function Router() {
+  const [page, setPage] = useState('home')
+
+  useEffect(() => {
+    const handleNavigation = () => {
+      const path = window.location.pathname
+      if (path.includes('accessibility')) {
+        setPage('accessibility')
+      } else {
+        setPage('home')
+      }
+    }
+
+    handleNavigation()
+    window.addEventListener('popstate', handleNavigation)
+    return () => window.removeEventListener('popstate', handleNavigation)
+  }, [])
+
+  const navigateTo = (path) => {
+    window.history.pushState(null, '', path)
+    setPage(path.includes('accessibility') ? 'accessibility' : 'home')
+    window.scrollTo(0, 0)
+  }
+
+  return page === 'accessibility' ? <Accessibility /> : <App />
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Router />
   </React.StrictMode>
 )
+

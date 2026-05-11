@@ -62,6 +62,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('Form submitted:', formData)
+    alert('Thank you! We will get back to you soon.')
     setFormData({ name: '', email: '', message: '' })
   }
 
@@ -73,6 +74,7 @@ function App() {
           <a href="#services">Services</a>
           <a href="#portfolio">Portfolio</a>
           <a href="#about">About</a>
+          <a href="/accessibility">Accessibility</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -254,46 +256,6 @@ function App() {
             <a href="#social">Social Media</a>
           </div>
         </footer>
-      </main>
-    </div>
-  )
-}
-
-export default App
-
-        <section className="glass-card services" id="services">
-          <h2>Services</h2>
-          <div className="feature-list">
-            {features.map((feature) => (
-              <article key={feature.title} className="feature-item">
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="glass-card contact-card" id="contact">
-          <div>
-            <h2>Let’s build something beautiful.</h2>
-            <p>Send a quick note and we’ll connect the experience, messaging, and backend you need.</p>
-          </div>
-          <div className="contact-panel">
-            <div className="contact-field">
-              <label>Name</label>
-              <input type="text" placeholder="Your name" />
-            </div>
-            <div className="contact-field">
-              <label>Email</label>
-              <input type="email" placeholder="hello@example.com" />
-            </div>
-            <div className="contact-field">
-              <label>Message</label>
-              <textarea placeholder="Tell us about your project."></textarea>
-            </div>
-            <button className="btn primary">Send message</button>
-          </div>
-        </section>
       </main>
     </div>
   )

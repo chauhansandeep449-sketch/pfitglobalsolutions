@@ -1,0 +1,262 @@
+/* Accessibility Page Styles */
+.accessibility-hero {
+  background: linear-gradient(135deg, rgba(114, 105, 255, 0.15), rgba(45, 212, 191, 0.15)),
+    rgba(255, 255, 255, 0.07);
+}
+
+.accessibility-statement {
+  grid-column: span min(2, auto);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.accessibility-statement p {
+  color: #c8d6ff;
+  margin-bottom: 20px;
+}
+
+.accessibility-features-section {
+  grid-column: span min(2, auto);
+}
+
+.accessibility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.accessibility-feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px 24px;
+}
+
+.feature-emoji {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.accessibility-feature-card h3 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+}
+
+.accessibility-feature-card p {
+  margin: 0;
+  color: #bcc9ff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.wcag-section {
+  grid-column: span min(2, auto);
+}
+
+.wcag-standards {
+  display: grid;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.wcag-item {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px;
+  border-radius: 16px;
+  border-left: 4px solid #7269ff;
+}
+
+.wcag-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.wcag-item h4 {
+  margin: 0;
+  color: #eef2ff;
+  font-size: 1rem;
+}
+
+.wcag-status {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(114, 105, 255, 0.2);
+  color: #7269ff;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.wcag-item p {
+  margin: 0;
+  color: #bcc9ff;
+  font-size: 0.95rem;
+}
+
+.principles-section {
+  grid-column: span min(2, auto);
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.principle {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.principle h4 {
+  margin: 0 0 12px;
+  color: #2dd4bf;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.principle p {
+  margin: 0;
+  color: #bcc9ff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.implementation-section {
+  grid-column: span min(2, auto);
+}
+
+.implementation-steps {
+  margin: 24px 0 0;
+  padding: 0 0 0 20px;
+}
+
+.implementation-steps li {
+  margin-bottom: 18px;
+  color: #c8d6ff;
+  line-height: 1.7;
+}
+
+.implementation-steps strong {
+  color: #eef2ff;
+}
+
+.resources-section {
+  grid-column: span min(2, auto);
+}
+
+.resources-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.resource-item {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.resource-item h4 {
+  margin: 0 0 10px;
+  color: #7269ff;
+  font-size: 0.95rem;
+}
+
+.resource-item p {
+  margin: 0;
+  color: #bcc9ff;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.accessibility-contact {
+  grid-column: span min(2, auto);
+  text-align: center;
+}
+
+.accessibility-contact p {
+  color: #c8d6ff;
+  font-size: 1.05rem;
+  margin-bottom: 28px;
+  line-height: 1.7;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.contact-method {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-method h4 {
+  margin: 0 0 12px;
+  color: #eef2ff;
+  font-size: 1rem;
+}
+
+.contact-method p {
+  margin: 0;
+  color: #c8d6ff;
+  font-size: 0.95rem;
+}
+
+.contact-method a {
+  color: #7269ff;
+  font-weight: 600;
+  transition: color 200ms ease;
+}
+
+.contact-method a:hover {
+  color: #9b9fff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .accessibility-statement,
+  .accessibility-features-section,
+  .wcag-section,
+  .principles-section,
+  .implementation-section,
+  .resources-section,
+  .accessibility-contact,
+  .footer {
+    grid-column: span 1 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .accessibility-grid,
+  .principles-grid,
+  .resources-list,
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .wcag-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .accessibility-contact p {
+    font-size: 1rem;
+  }
+}
