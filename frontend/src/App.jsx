@@ -75,6 +75,7 @@ function App() {
           <a href="#portfolio">Portfolio</a>
           <a href="#about">About</a>
           <a href="/accessibility">Accessibility</a>
+          <a href="/privacy">Privacy Policy</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -251,7 +252,7 @@ function App() {
         <footer className="footer">
           <p>&copy; 2026 PFit Global Solutions. All rights reserved.</p>
           <div className="footer-links">
-            <a href="#privacy">Privacy Policy</a>
+            <a href="/privacy">Privacy Policy</a>
             <a href="#terms">Terms of Service</a>
             <a href="#social">Social Media</a>
           </div>

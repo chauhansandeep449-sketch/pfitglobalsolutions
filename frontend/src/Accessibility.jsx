@@ -232,7 +232,7 @@ function Accessibility() {
           <div className="footer-links">
             <a href="#" onClick={() => handleNavClick('/')}>Home</a>
             <a href="/accessibility">Accessibility Statement</a>
-            <a href="#privacy">Privacy Policy</a>
+            <a href="#" onClick={() => handleNavClick('/privacy')}>Privacy Policy</a>
           </div>
         </footer>
       </main>
