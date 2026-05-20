@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import Accessibility from './Accessibility'
 import Privacy from './Privacy'
+import Terms from './Terms'
 import './index.css'
 import './accessibility.css'
 
@@ -18,6 +19,8 @@ function Router() {
         setPage('accessibility')
       } else if (path.includes('privacy') || hash.includes('privacy')) {
         setPage('privacy')
+      } else if (path.includes('terms') || hash.includes('terms')) {
+        setPage('terms')
       } else {
         setPage('home')
       }
@@ -38,6 +41,8 @@ function Router() {
       setPage('accessibility')
     } else if (path.includes('privacy') || path.includes('#privacy')) {
       setPage('privacy')
+    } else if (path.includes('terms') || path.includes('#terms')) {
+      setPage('terms')
     } else {
       setPage('home')
     }
@@ -46,6 +51,7 @@ function Router() {
 
   if (page === 'accessibility') return <Accessibility />
   if (page === 'privacy') return <Privacy />
+  if (page === 'terms') return <Terms />
   return <App />
 }
 

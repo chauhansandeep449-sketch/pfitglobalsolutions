@@ -233,6 +233,7 @@ function Accessibility() {
             <a href="#" onClick={() => handleNavClick('/')}>Home</a>
             <a href="/accessibility">Accessibility Statement</a>
             <a href="#" onClick={() => handleNavClick('/privacy')}>Privacy Policy</a>
+            <a href="#" onClick={() => handleNavClick('/terms')}>Terms of Service</a>
           </div>
         </footer>
       </main>

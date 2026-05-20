@@ -457,7 +457,8 @@ textarea {
 
 /* Privacy Policy Styles */
 
-.privacy-hero {
+.privacy-hero,
+.terms-hero {
   background: linear-gradient(135deg, rgba(116, 94, 255, 0.12) 0%, rgba(32, 211, 234, 0.08) 100%),
     rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(116, 94, 255, 0.2);
@@ -467,6 +468,29 @@ textarea {
   font-size: 0.9rem;
   color: #9bb0ff;
   margin-top: 16px;
+}
+
+.terms-section {
+  margin-bottom: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  scroll-margin-top: 80px;
+}
+
+.terms-section h2 {
+  margin-top: 0;
+  color: #eef2ff;
+}
+
+.terms-section p {
+  color: #dbe5ff;
+  line-height: 1.7;
+}
+
+.terms-section ul {
+  margin: 16px 0;
+  padding-left: 24px;
 }
 
 .table-of-contents {
